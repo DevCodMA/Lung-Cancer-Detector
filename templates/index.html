@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Start your development with LeadMark landing page.">
+    <meta name="author" content="Devcrud">
+    <title>Lung Cancer Detector</title>
+    <!-- font icons -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/themify-icons.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/leadmark.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/index.css') }}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        {% if disp == 1 %}
+        #loaders{
+            display:none;
+        }
+        {% endif %}
+    </style>
+
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+
+    <!-- page Navigation -->
+    <nav class="navbar custom-navbar navbar-expand-md navbar-light fixed-top affix-top" data-spy="affix"
+        data-offset-top="10">
+        <div class="container">
+            <a class="navbar-brand" href="">
+                <img src="{{ url_for('static', filename='assets/img/logo2.png') }}" alt="">
+            </a>
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item unique-link">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+
+                    <li class="nav-item unique-link">
+                        <a class="nav-link" href="#service" id="serv-link">Detect</a>
+                    </li>
+
+                    <li class="nav-item unique-link">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End Of Second Navigation -->
+
+    <!-- Page Header -->
+    <header class="header">
+        <div class="overlay">
+            <h4 style="letter-spacing: 0.3rem;margin-bottom: 30px;;">LUNG CANCER DETECTOR</h4>
+            <h1 class="glow-animation">Bringing Clarity to Your Health!</h1>
+            
+        </div>
+        <div class="shape">
+            <svg id="visual" viewBox="0 0 1500 300" width="1500" height="300" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"><path d="M0 222L125 247L250 158L375 176L500 238L625 185L750 209L875 217L1000 268L1125 272L1250 201L1375 261L1500 272L1500 301L1375 301L1250 301L1125 301L1000 301L875 301L750 301L625 301L500 301L375 301L250 301L125 301L0 301Z" fill="#871400"></path><path d="M0 201L125 256L250 190L375 249L500 207L625 229L750 261L875 232L1000 259L1125 191L1250 221L1375 236L1500 209L1500 301L1375 301L1250 301L1125 301L1000 301L875 301L750 301L625 301L500 301L375 301L250 301L125 301L0 301Z" fill="#a32d04"></path><path d="M0 225L125 205L250 255L375 233L500 208L625 246L750 211L875 255L1000 221L1125 227L1250 243L1375 211L1500 283L1500 301L1375 301L1250 301L1125 301L1000 301L875 301L750 301L625 301L500 301L375 301L250 301L125 301L0 301Z" fill="#be4407"></path><path d="M0 254L125 250L250 242L375 240L500 264L625 237L750 240L875 246L1000 258L1125 265L1250 249L1375 286L1500 283L1500 301L1375 301L1250 301L1125 301L1000 301L875 301L750 301L625 301L500 301L375 301L250 301L125 301L0 301Z" fill="#da5b09"></path><path d="M0 289L125 293L250 292L375 289L500 263L625 273L750 273L875 293L1000 286L1125 260L1250 274L1375 286L1500 258L1500 301L1375 301L1250 301L1125 301L1000 301L875 301L750 301L625 301L500 301L375 301L250 301L125 301L0 301Z" fill="#f5730a"></path></svg>
+        </div>
+        <div class="mouse-icon">
+            <div class="wheel"></div>
+        </div>
+
+    </header>
+    <!-- End Of Page Header -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12" align="justify">
+                <p>Lung cancer is a malignant tumor that originates in the cells of the lungs, which are vital organs responsible for oxygen exchange during breathing. There are different types of lung cancer, with the most common being non-small cell lung cancer (NSCLC), which includes three main subtypes: Adenocarcinoma, Large cell carcinoma, and Squamous cell carcinoma. Each subtype has distinct characteristics and behaviors.</p>
+
+<p><a class="unique-link2" href="#caro-1">Adenocarcinoma</a> is the most common subtype of NSCLC and is often found in the outer part of the lungs. It tends to grow slowly and is associated with a history of smoking, as well as other risk factors such as exposure to environmental toxins. Adenocarcinoma is known to develop from glandular cells, and it can spread to other parts of the body if not detected and treated early.</p>
+
+<p><a class="unique-link2" href="#caro-2">Large cell carcinoma</a>, also known as undifferentiated carcinoma, is a less common subtype of NSCLC. It is characterized by large, abnormal-looking cells and tends to grow rapidly. Large cell carcinoma can occur in any part of the lungs and is often aggressive, with a higher risk of metastasis.</p>
+
+<p><a class="unique-link2" href="#caro-3">Squamous cell carcinoma</a>, also known as epidermoid carcinoma, typically arises in the bronchial tubes, which are the air passages leading to the lungs. It is often associated with a history of smoking and is known to develop from squamous cells that line the airways. Squamous cell carcinoma tends to grow slowly, but it can spread to nearby lymph nodes and other organs.</p>
+            </div>
+        </div>
+        <br /><br />
+    </div>
+
+    <!--Carousal 1-->
+    
+    <div class="carousel-containers">
+        <br/><h2 id="caro-1">Adenocarcinoma</h2>
+        <div class="carousel-tracks1">
+          <div class="carousel-slides1">
+            <img src="{{ url_for('static', filename='assets/img/1.png') }}" alt="Image 1" class="imgC">
+            <img src="{{ url_for('static', filename='assets/img/2.png') }}" alt="Image 2" class="imgC">
+            <img src="{{ url_for('static', filename='assets/img/3.png') }}" alt="Image 3" class="imgC">
+            <img src="{{ url_for('static', filename='assets/img/4.png') }}" alt="Image 4" class="imgC">
+        </div>
+        </div>
+        <a class="carousel-controls1 carousel-prevs" onclick="prevSlide('1')">&lt;</a>
+        <a class="carousel-controls1 carousel-nexts" onclick="nextSlide('1')">&gt;</a>
+      </div>
+
+      <br/><br/><br/>
+      <!--Carousal 2-->
+    
+    <div class="carousel-containers">
+        <br/><h2 id="caro-2">Large cell carcinoma</h2>
+        <div class="carousel-tracks2">
+          <div class="carousel-slides2">
+            <img src="{{ url_for('static', filename='assets/img/5.png') }}" alt="Image 1" class="imgC">
+            <img src="{{ url_for('static', filename='assets/img/6.png') }}" alt="Image 2" class="imgC">
+            <img src="{{ url_for('static', filename='assets/img/7.png') }}" alt="Image 3" class="imgC">
+            <img src="{{ url_for('static', filename='assets/img/8.png') }}" alt="Image 4" class="imgC">
+        </div>
+        </div>
+        <a class="carousel-controls2 carousel-prevs" onclick="prevSlide('2')">&lt;</a>
+        <a class="carousel-controls2 carousel-nexts" onclick="nextSlide('2')">&gt;</a>
+      </div>
+
+      <br/><br/><br/>
+      <!--Carousal 3-->
+    
+    <div class="carousel-containers">
+        <br/><h2 id="caro-3">Squamous cell carcinoma</h2>
+        <div class="carousel-tracks3">
+          <div class="carousel-slides3">
+            <img src="{{ url_for('static', filename='assets/img/9.png') }}" alt="Image 1" class="imgC">
+            <img src="{{ url_for('static', filename='assets/img/10.png') }}" alt="Image 2" class="imgC">
+            <img src="{{ url_for('static', filename='assets/img/11.png') }}" alt="Image 3" class="imgC">
+            <img src="{{ url_for('static', filename='assets/img/12.png') }}" alt="Image 4" class="imgC">
+        </div>
+        </div>
+        <a class="carousel-controls3 carousel-prevs" onclick="prevSlide('3')">&lt;</a>
+        <a class="carousel-controls3 carousel-nexts" onclick="nextSlide('3')">&gt;</a>
+      </div>
+
+    <!-- Service Section -->
+    <section id="service" class="section pt-0">
+        <div class="container">
+            <h6 class="section-title text-center">
+                <br /><br />
+                <span class="zoom-out txcol expanded-spacing">ANALYZE CELL IMAGE</span>
+            </h6>
+            <h6 class="section-subtitle text-center mb-5 pb-3"></h6>
+
+            <div class="row">
+                <div class="col-lg-3"></div>
+                <div class="col-lg-6">
+                    <form method="post" action="/process" enctype="multipart/form-data">
+                        <div class="fclass" align="center">
+                            <img src="{% if upimg == '0' %}{{ url_for('static', filename='assets/img/upload.jpg') }}{% else %}{{ upimg }}{% endif %}"
+    class="img" name="image" id="image">
+                            <br />
+                            <input type="file" style="display: none;" id="uploadbtn" name="image_file"
+                                accept=".png, .jpg, .jpeg, .bmp">
+                            <input type="button" value="Upload" class="btn btn-primary rounded w-md mt-3"
+                                onclick="$('#uploadbtn').click()">
+                            <input type="submit" value="Analyze" class="btn btn-primary rounded w-md mt-3"
+                                id="submitbtn">
+                            <input type="hidden" value="0" name="isTrue" id="isTrue">
+                        </div>
+                    </form>
+
+                </div>
+                <div class="col-lg-3"></div>
+            </div>
+        </div>
+    </section>
+    <!-- End OF Service Section -->
+
+    <div align="center" id="loaders" style="display:none">
+        <div class="loader-container">
+            <div class="loader"></div>
+          </div>
+    </div>
+
+    {% if disp == 1 %}
+    <section class="section" style="margin-top:-40px;">
+        <div class=" assessment_res" align="center">
+            <span class="zoom-out texcol expanded-spacing">ASSESSMENT RESULT</span>
+            <br/><br/>
+            {% if detect == 0 or detect == 1 or detect == 3 %}
+            <span class="testrespos">{{ res }} Detected!</span>
+            <br/><br/>
+            {% if detect == 0 %}
+            <div align="justify" class="col-lg-8 mx-auto">
+                <ul>
+                    <li>Follow your recommended treatment plan as advised by your healthcare provider, which may include surgery, chemotherapy, radiation therapy, targeted therapy, immunotherapy, or a combination of treatments.</li>
+                    <li>Avoid smoking and exposure to harmful substances such as secondhand smoke, asbestos, radon, and air pollution.</li>
+                    <li>Prioritize lung health by practicing deep breathing exercises, staying hydrated, and avoiding respiratory irritants.</li>
+                    <li>Monitor for any new or worsening symptoms and report them promptly to your healthcare provider.</li>
+                    <li>Follow a healthy lifestyle, including eating a balanced diet, staying physically active, managing stress, and getting adequate sleep.</li>
+                    <li>Seek emotional support from loved ones, support groups, or counseling to cope with the emotional impact of the condition.</li>
+                    <li>Stay informed about lung cancer and its management through reputable sources and discuss any questions or concerns with your healthcare provider.</li>
+                </ul>
+            </div>
+            {% elif detect == 1 %}
+            <div class="col-lg-8 mx-auto" align="justify">
+                <ul>
+                    <li>Follow your recommended treatment plan as advised by your healthcare provider, which may include surgery, chemotherapy, radiation therapy, targeted therapy, immunotherapy, or a combination of treatments.</li>
+                    <li>Avoid smoking and exposure to harmful substances such as secondhand smoke, asbestos, radon, and air pollution.</li>
+                    <li>Practice good respiratory hygiene by covering your mouth and nose when coughing or sneezing, and disposing of tissues properly.</li>
+                    <li>Take measures to improve indoor air quality, such as using air purifiers and keeping your home well-ventilated.</li>
+                    <li>Stay vigilant about any changes in your health, such as new symptoms or side effects from treatments, and report them promptly to your healthcare provider.</li>
+                    <li>Follow a well-balanced diet that is rich in nutrients to support your immune system and overall health.</li>
+                    <li>Stay physically active within your capabilities, and engage in exercises that are safe and recommended by your healthcare provider.</li>
+                    <li>Take steps to manage stress and prioritize mental well-being, such as practicing relaxation techniques or seeking support from a counselor or therapist.</li>
+                    <li>Stay informed about the latest advancements in lung cancer research and treatment options through reputable sources, and discuss any questions or concerns with your healthcare provider.</li>
+                </ul>
+            </div>
+            {% elif detect == 3 %}
+            <div class="col-lg-8 mx-auto" align="justify">
+                <ul>
+                    <li>Follow your recommended treatment plan as advised by your healthcare provider, which may include surgery, chemotherapy, radiation therapy, targeted therapy, immunotherapy, or a combination of treatments.</li>
+                    <li>Avoid smoking and exposure to harmful substances such as secondhand smoke, asbestos, radon, and air pollution.</li>
+                    <li>Take precautions to protect your skin from the sun, as squamous cell carcinoma can also occur on the skin due to sun exposure.</li>
+                    <li>Practice good oral hygiene and visit your dentist regularly to prevent oral infections, as squamous cell carcinoma can also occur in the mouth and throat.</li>
+                    <li>Stay vigilant about any changes in your health, such as new symptoms or side effects from treatments, and report them promptly to your healthcare provider.</li>
+                    <li>Follow a well-balanced diet that is rich in nutrients to support your immune system and overall health.</li>
+                    <li>Stay physically active within your capabilities, and engage in exercises that are safe and recommended by your healthcare provider.</li>
+                    <li>Take steps to manage stress and prioritize mental well-being, such as practicing relaxation techniques or seeking support from a counselor or therapist.</li>
+                    <li>Stay informed about the latest advancements in lung cancer research and treatment options through reputable sources, and discuss any questions or concerns with your healthcare provider.</li>
+                </ul>
+            </div>
+            {% endif %}            
+            {% else %}
+            {% if detect == 2 %}
+            <span class="testresneg">No Evidence of Lung Cancer Detected</span>
+            {% endif %}
+            {% endif %}
+            {% endif %}
+        </div>
+    </section>
+
+    <section id="about" class="section pt-10">
+        <div class="container">
+            <h6 class="section-title text-center">
+                <span class="zoom-out texcol expanded-spacing" style="color:#ff8521">ABOUT PROJECT</span>
+            </h6>
+            <h6></h6>
+            <div class="row">
+                <div class="col-lg-12" align="justify">
+                    <p>The "Advancing Lung Cancer Detection: A Multi-Class Approach with Xception Architecture and Transfer Learning Techniques" project is a cutting-edge research endeavor that aims to enhance lung cancer detection using advanced deep learning techniques. The project utilized a dataset of 1000 CT scans, which were carefully curated to include diverse cases representing different stages and types of lung cancer and it achieved an impressive accuracy rate of 77% in detecting different types of lung cancer from CT scans.</p>
+
+<p>The project leveraged the Xception architecture, a state-of-the-art convolutional neural network (CNN) model known for its exceptional performance in image classification tasks. The Xception architecture is characterized by its depth and complexity, allowing it to capture intricate features from medical images with high accuracy. The deep layers of the Xception model enable it to learn and represent complex patterns and features from the CT scans, making it well-suited for the task of lung cancer detection.</p>
+
+<p>Additionally, transfer learning techniques were employed in the project to further enhance the model's performance. Transfer learning allows the model to leverage pre-trained weights from another task or dataset, which helps in speeding up the training process and improving the model's generalization ability. By leveraging transfer learning, the model was able to learn from a larger and more diverse dataset, resulting in improved accuracy and robustness.</p>
+
+<p>The multi-class approach adopted in the project allows for the detection of different types of lung cancer, including adenocarcinoma, squamous cell carcinoma, and small cell carcinoma, among others. This approach enables the model to classify the lung cancer cases into different categories with high precision, facilitating early detection and accurate diagnosis.</p>
+                    <p>
+                        For more information about the project, please refer to the project
+                        documentation or contact me.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section has-img-bg pb-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="text-center">Developed by, <br/>Muhammed Ajmal</i></div>
+                </div>
+                <div class="col-lg-4"></div>
+                <div class="col-lg-4">
+                    <div class="social-gicons">
+                        <a href="https://www.facebook.com/yourpage" class="font-aw" target="_blank"><i class="fa fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/youraccount" class="font-aw" target="_blank"><i class="fa fa-instagram"></i></a>
+                        <a href="https://api.whatsapp.com/send?phone=1234567890" class="font-aw" target="_blank"><i class="fa fa-whatsapp"></i></a>
+                        <a href="mailto:example@gmail.com" class="font-aw"><i class="fa fa-envelope"></i></a>
+                      </div>
+                </div>
+            </div>
+            <!-- Page Footer -->
+            <footer class="mt-5 py-4 border-top border-secondary">
+            </footer>
+            <!-- End of Page Footer -->
+        </div>
+    </section>
+
+    <!-- core  -->
+    <script src="{{ url_for('static', filename='assets/js/jquery-3.4.1.js') }}"></script>
+    <script src="{{ url_for('static', filename='assets/js/bootstrap.affix.js') }}"></script>
+    <script src="{{ url_for('static', filename='assets/js/bootstrap.bundle.js') }}"></script>
+    <script src="{{ url_for('static', filename='assets/js/isotope.pkgd.js') }}"></script>
+    <script src="{{ url_for('static', filename='assets/js/leadmark.js') }}"></script>
+
+    {% if disp == 1 %}
+    <script>
+        $(document).ready(function() {
+            $("#serv-link").trigger("click");
+        });
+    </script>
+    {% endif %}
+
+
+    {% if img == "null" %}
+    <script>
+        alert("Please upload a valid image!")
+    </script>
+    {% endif %}
+
+    <script>
+
+        // function prevSlide() {
+        //     var slideContainer = document.querySelector('.carousel-tracks');
+        //     var slideWidth = document.querySelector('.carousel-slides img').offsetWidth;
+        //     slideContainer.style.transform = `translateX(${slideWidth}px)`;
+        //     setTimeout(() => {
+        //         slideContainer.appendChild(slideContainer.firstElementChild);
+        //         slideContainer.style.transform = '';
+        //     }, 2000);
+        //     }
+
+        //     function nextSlide() {
+        //     var slideContainer = document.querySelector('.carousel-tracks');
+        //     var slideWidth = document.querySelector('.carousel-slides img').offsetWidth;
+        //     slideContainer.style.transform = `translateX(-${slideWidth}px)`;
+        //     setTimeout(() => {
+        //         slideContainer.prepend(slideContainer.lastElementChild);
+        //         slideContainer.style.transform = '';
+        //     }, 2000);
+        //     }
+
+
+        function prevSlide(ret) {
+            var slideContainer = document.querySelector('.carousel-tracks'+ret);
+            var slideWidth = document.querySelector('.carousel-slides'+ret+' img').offsetWidth;
+            slideContainer.style.transform = `translateX(${slideWidth}px)`;
+            setTimeout(() => {
+                slideContainer.appendChild(slideContainer.firstElementChild);
+                slideContainer.style.transform = '';
+                var prevSlide = slideContainer.querySelector('.carousel-slide'+ret+' img:nth-child(2)');
+                while (isImageEmpty(prevSlide)) {
+                slideContainer.appendChild(slideContainer.firstElementChild);
+                prevSlide = slideContainer.querySelector('.carousel-slide'+ret+' img:nth-child(2)');
+                }
+            }, 2000);
+            }
+
+            function nextSlide(ret) {
+            var slideContainer = document.querySelector('.carousel-tracks'+ret);
+            var slideWidth = document.querySelector('.carousel-slides'+ret+' img').offsetWidth;
+            slideContainer.style.transform = `translateX(-${slideWidth}px)`;
+            setTimeout(() => {
+                slideContainer.prepend(slideContainer.lastElementChild);
+                slideContainer.style.transform = '';
+                var nextSlide = slideContainer.querySelector('.carousel-slides'+ret+' img:nth-child(4)');
+                while (isImageEmpty(nextSlide)) {
+                slideContainer.prepend(slideContainer.lastElementChild);
+                nextSlide = slideContainer.querySelector('.carousel-slides'+ret+' img:nth-child(4)');
+                }
+            }, 2000);
+            }
+
+            function isImageEmpty(img) {
+            return img.getAttribute('src') === '';
+            }
+
+
+        $("#submitbtn").click(function(){
+            $("#loaders").css("display", "block")
+        })
+
+
+        $("#uploadbtn").change(function () {
+            let ext = ($(this).val().split("\\").pop().split(".").pop()).toLowerCase();
+            let exts = ['png', 'jpg', 'jpeg', 'bmp']
+            if ($.inArray(ext, exts) !== -1) {
+                $("#isTrue").val("1")
+                var file = this.files[0];
+                var reader = new FileReader();
+                reader.onload = function (e) {
+                    $("#image").attr("src", e.target.result);
+                    $("#submitbtn").removeAttr("disabled")
+                }
+                reader.readAsDataURL(file);
+            } else {
+                alert("Please upload a valid image!\nSupported types are: png, jpg, bmp")
+                $("#isTrue").val("0")
+                $("#image").attr("src", "../static/assets/img/upload.jpg");
+                $("#submitbtn").attr("disabled", true);
+            }
+        })
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,187 @@
+.fclass .img{
+    height: 300px;
+    width: 450px;
+    padding:10px;
+    border: 4px dotted rgba(0,0,0,0.5);
+    cursor: pointer;
+}
+
+.fclass{
+
+}
+
+.zoom-out {
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .zoom-out:hover {
+    transform: scale(0.9);
+  }
+
+  /* Define the linear gradient for font color */
+  .gradient-text {
+    background: linear-gradient(to right, #000000, #064ede);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
+  /* Define the expanded spacing between characters */
+  .expanded-spacing {
+    letter-spacing: 0.15em;
+    font-weight:bold;
+    font-size:35px;
+  }
+
+  div>p{
+    font-size:18px;
+    letter-spacing: 0.15rem;
+  }
+
+  .testrespos{
+    color:red;
+    font-weight:bold;
+    font-size:18px;
+  }
+
+  .testresneg{
+    color:green;
+    font-weight:bold;
+    font-size:18px;
+  }
+
+  .addres{
+    font-size:18px;
+  }
+
+  .unique-link{
+    border:3px solid rgba(255,255,255,0.65);
+    margin-right:10px;
+  }
+
+  .unique-link:hover{
+    transform: scale(1.15);
+  }
+
+
+  .glow-animation {
+    text-align: center;
+    font-weight:bold;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    animation: glow 2s linear infinite;
+  }
+  
+  @keyframes glow {
+    0% {
+      text-shadow: 0 0 5px #ffffff;
+    }
+    50% {
+      text-shadow: 0 0 8px #ffffff, 0 0 30px #06d2da;
+    }
+    100%{
+      text-shadow: 0 0 5px #ffffff;
+    }
+  }
+
+
+  .unique-link2:hover{
+    font-weight:bold;
+  }
+
+
+  .carousel-containers {
+    max-width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .carousel-tracks1, .carousel-tracks2, .carousel-tracks3 {
+    display: flex;
+    transition: transform 0.5s ease-in;
+  }
+  
+  .carousel-slides1, .carousel-slides2, .carousel-slides3 {
+    display: flex;
+  }
+  
+  .carousel-slides1 img, .carousel-slides2 img, .carousel-slides3 img {
+    flex-shrink: 0;
+    width: calc(100% / 3);
+  }
+  
+  .carousel-controls1, .carousel-controls2, .carousel-controls3 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background-color: #ff8521;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    font-size: 24px;
+    text-decoration: none;
+  }
+  
+  .carousel-prevs {
+    left: 20px;
+    font-weight:bold;
+    color:white;
+    cursor:pointer;
+    height:45px;
+    margin-top:30px;
+
+  }
+  
+  .carousel-nexts {
+    right: 20px;
+    font-weight:bold;
+    color:white;
+    cursor:pointer;
+    height:45px;
+    margin-top:30px;
+  }
+  
+  
+
+  .imgC{
+    width:500px;
+    height:300px;
+    padding:20px;
+  }
+
+  .txcol{
+    color:#ff8521;
+  }
+
+  .font-aw{
+    font-size: 30px;
+    margin-left:25px;
+  }
+
+  .loader-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .loader {
+    border: 4px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 4px solid #ff511c;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
